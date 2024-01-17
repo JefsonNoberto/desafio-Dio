@@ -1,10 +1,10 @@
-let saldoVitorias = saldo(100, 30);
-let nivel = xp();
+let saldoVitorias = calcularSaldo(100, 30);
+let nivel = verificarSaldo();
 
-function saldo(vitorias, derrotas) {
+function calcularSaldo(vitorias, derrotas) {
   return vitorias - derrotas;
 }
-function xp() {
+function verificarSaldo() {
   let nivel;
   if (saldoVitorias <= 10) {
     nivel = "ferro";
